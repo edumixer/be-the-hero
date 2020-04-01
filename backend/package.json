@@ -1,21 +1,29 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Backend do BeTheHero, Semana Omnistack 11",
+  "main": "node src/server.js",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "test": "cross-env NODE_ENV='test' jest",
+    "start": "node src/server.js"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Lucas Emanuel Nascimento Nóbrega Dias",
   "license": "ISC",
   "dependencies": {
+    "celebrate": "^12.0.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "knex": "^0.20.13",
+    "pg": "^4.5.7",
     "sqlite3": "^4.1.1"
   },
   "devDependencies": {
+    "cross-env": "^7.0.2",
+    "supertest": "^4.0.2",
+    "jest": "^25.2.3",
     "nodemon": "^2.0.2"
+  },
+  "engines": {
+    "node": "12.16.1"
   }
 }
