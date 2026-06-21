@@ -15,7 +15,7 @@
     "express": "^4.17.3",
     "knex": "^0.20.13",
     "pg": "^4.5.7",
-    "sqlite3": "^4.1.1"
+    "sqlite3": "^6.0.1"
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
